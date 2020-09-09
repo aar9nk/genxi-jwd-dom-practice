@@ -52,7 +52,7 @@
                         <p class="card-text">
                             Clicking the button should toggle the alert on and off.
                         </p>
-                        <div id="toggle-alert" class="alert alert-success">Hello world!</div>
+                        <div id="toggle-alert" class="alert alert-success invisible">Hello world!</div>
                         <button id="toggle-button" type="button" class="btn btn-primary btn-block">On</button>
                     </div>
                 </div>
@@ -64,12 +64,12 @@
                         <p class="card-text">
                             Validate the text box to be at least 3 characters.
                         </p>
-                        <form id="form-validate" class="needs-validation">
+                        <form id="form-validate" novalidation>
                             <div class="form-row">
                                 <label for="form-first-name">First Name</label>
-                                <input type="text" id="form-validate-first-name" class="form-control" required>
+                                <input type="text" id="form-validate-first-name" class="form-control">
                                 <div class="valid-feedback">Looks good!</div>
-                                <div class="invalid-feedback">First Name needs to be 3 characters long</div>
+                                <div class="invalid-feedback">First Name needs to be 3 characters long or more</div>
                             </div>
                             <div class="form-row my-3">
                                 <button class="btn btn-primary btn-block" type="submit">
