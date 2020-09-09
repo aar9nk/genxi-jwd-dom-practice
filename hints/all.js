@@ -12,6 +12,7 @@
 // of the alert with id "toggle-alert" on and off.
 
 // Validate
+// Use bootstrap validation: https://getbootstrap.com/docs/4.5/components/forms/#server-side
 // When the form with id "form-validate" is submitted,
 // - prevent the default event from firing
 // - check the length of the input with id "form-validate-first-name"
