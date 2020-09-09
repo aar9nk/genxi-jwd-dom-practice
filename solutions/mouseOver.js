@@ -5,10 +5,10 @@
 
 const lightBulb = document.querySelector('#light-bulb');
 
-lightBulb.onmouseenter = () => {
+lightBulb.addEventListener('mouseenter', () => {
     lightBulb.src = 'images/light-bulb-on.png';
-};
+});
 
-lightBulb.onmouseleave = () => {
+lightBulb.addEventListener('mouseleave', () => {
     lightBulb.src = 'images/light-bulb-off.png';
-}
+});

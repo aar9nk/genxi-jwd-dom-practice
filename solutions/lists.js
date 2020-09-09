@@ -9,11 +9,11 @@ const formHobby = document.querySelector('#form-hobby');
 const formHobbyText = document.querySelector('#form-hobby-text');
 const hobbyList = document.querySelector('#hobby-list');
 
-formHobby.onsubmit = (event) => {
+formHobby.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const newHobby = document.createElement('li');
     newHobby.innerText = formHobbyText.value
     newHobby.classList.add('list-group-item');
     hobbyList.appendChild(newHobby);
-}
+});

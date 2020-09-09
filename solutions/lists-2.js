@@ -7,10 +7,10 @@
 
 const hobbyList2 = document.querySelector('#hobby-list-2');
 
-hobbyList2.onclick = (event) => {
+hobbyList2.addEventListener('click', (event) => {
     if (event.target.classList.contains('remove-hobby')) {
         event.preventDefault();
         const parentLi = event.target.parentElement;
         hobbyList2.removeChild(parentLi);
     }
-}
+});

@@ -7,7 +7,7 @@ let isToggled = false;
 const toggleButton = document.querySelector('#toggle-button');
 const toggleAlert = document.querySelector('#toggle-alert');
 
-toggleButton.onclick = () => {
+toggleButton.addEventListener('click', () => {
     if (isToggled) {
         isToggled = false;
         toggleAlert.classList.add('invisible');
@@ -17,4 +17,4 @@ toggleButton.onclick = () => {
         toggleAlert.classList.remove('invisible');
         toggleButton.innerHTML = 'Off';
     }
-}
+});
