@@ -41,7 +41,7 @@
                             Switch the light on when your mouse hovers over it.
 
                         </p>
-                        <img class="mx-auto d-block" src="images/light-bulb-off.png" />
+                        <img id="light-bulb" class="mx-auto d-block" src="images/light-bulb-off.png" />
                     </div>
                 </div>
             </div>
@@ -52,8 +52,8 @@
                         <p class="card-text">
                             Clicking the button should toggle the alert on and off.
                         </p>
-                        <div class="alert alert-success">Hello world!</div>
-                        <button type="button" class="btn btn-primary btn-block">On</button>
+                        <div id="toggle-alert" class="alert alert-success">Hello world!</div>
+                        <button id="toggle-button" type="button" class="btn btn-primary btn-block">On</button>
                     </div>
                 </div>
             </div>
@@ -67,12 +67,14 @@
                         <form id="form-validate" class="needs-validation">
                             <div class="form-row">
                                 <label for="form-first-name">First Name</label>
-                                <input type="text" class="form-control" id="form-first-name" required>
+                                <input type="text" id="form-validate-first-name" class="form-control" required>
                                 <div class="valid-feedback">Looks good!</div>
                                 <div class="invalid-feedback">First Name needs to be 3 characters long</div>
                             </div>
                             <div class="form-row my-3">
-                                <button class="btn btn-primary btn-block" type="submit">Submit form</button>
+                                <button class="btn btn-primary btn-block" type="submit">
+                                    Submit form
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -88,7 +90,7 @@
                         <form id="form-hobby" class="needs-validation">
                             <div class="form-row">
                                 <div class="col-8">
-                                    <input type="text" class="form-control" placeholder="Hobby" id="form-hobby-text"
+                                    <input type="text" id="form-hobby-text" class="form-control" placeholder="Hobby"
                                         required>
                                 </div>
                                 <div class="col">
@@ -96,7 +98,7 @@
                                 </div>
                             </div>
                         </form>
-                        <ul class="list-group mt-3">
+                        <ul id="hobby-list" class="list-group mt-3">
                             <li class="list-group-item">Eating pizza</li>
                         </ul>
                     </div>
@@ -109,19 +111,19 @@
                         <p class="card-text">
                             When the icon next to a hobby is clicked, remove it from the list.
                         </p>
-                        <ul class="list-group mt-3">
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <ul id="hobby-list-2" class="list-group mt-3">
+                            <li class="hobby list-group-item d-flex justify-content-between align-items-center">
                                 Eating pizza
-                                <a href="#" class="badge badge-danger">x</a>
+                                <a href="#" class="remove-hobby badge badge-danger">x</a>
                             </li>
 
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <li class="hobby list-group-item d-flex justify-content-between align-items-center">
                                 Painting
-                                <a href="#" class="badge badge-danger">x</a>
+                                <a href="#" class="remove-hobby badge badge-danger">x</a>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <li class="hobby list-group-item d-flex justify-content-between align-items-center">
                                 Playing video games
-                                <a href="#" class="badge badge-danger">x</a>
+                                <a href="#" class="remove-hobby badge badge-danger">x</a>
                             </li>
                         </ul>
                     </div>
