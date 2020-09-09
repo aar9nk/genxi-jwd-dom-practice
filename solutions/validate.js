@@ -10,7 +10,6 @@ const formValidateFirstName = document.querySelector('#form-validate-first-name'
 
 formValidate.onsubmit = (event) => {
     event.preventDefault();
-    event.stopPropagation();
 
     if (formValidateFirstName.value.length > 2) {
         formValidateFirstName.classList.add('is-valid');

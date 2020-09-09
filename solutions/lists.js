@@ -11,7 +11,6 @@ const hobbyList = document.querySelector('#hobby-list');
 
 formHobby.onsubmit = (event) => {
     event.preventDefault();
-    event.stopPropagation();
 
     const newHobby = document.createElement('li');
     newHobby.innerText = formHobbyText.value

@@ -56,7 +56,6 @@ const formValidateFirstName = document.querySelector('#form-validate-first-name'
 
 formValidate.onsubmit = (event) => {
     event.preventDefault();
-    event.stopPropagation();
 
     if (formValidateFirstName.value.length > 2) {
         formValidateFirstName.classList.add('is-valid');
@@ -80,7 +79,6 @@ const hobbyList = document.querySelector('#hobby-list');
 
 formHobby.onsubmit = (event) => {
     event.preventDefault();
-    event.stopPropagation();
 
     const newHobby = document.createElement('li');
     newHobby.innerText = formHobbyText.value
