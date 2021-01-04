@@ -15,3 +15,7 @@ Here are a few practice exercises to interact with the DOM. Try and complete as 
 **HINT**: Hints are available in the `hints` directory and solutions in `solutions`
 
 Try completing each exercise on your own, before checking the hints or solutions.
+
+### Example
+
+[Check out what your site should look like!](https://jwd-dom-practice.netlify.app)
